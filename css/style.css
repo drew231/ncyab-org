@@ -91,6 +91,8 @@ body {
 }
 
 .navbar {
+    position: fixed;
+    top: 1;
     background-color: #fff;
     display: flex;
     justify-content: space-between;
@@ -106,40 +108,111 @@ body {
 
 /* Hero Session */
 .hero {
-    padding: 2rem 4rem 0 ;
-    background: rgb(213, 243, 255);
-    /* background: purple; */
+    /* position: absolute; */
+    background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url('/images/bg_image_1.jpg');
+    background-size: cover;
+    background-position: center center;
+    width: 100%;
+    height: fit-content;
+    padding: 10rem 4rem;
+    color: #fff;
 }
 
 .hero-container {
     width: 100%;
     display: flex;
     align-items: center;
-    /* background: gray; */
+    justify-content: center;
     gap: 1rem;
-}
-
-.sm-icons {
-    width: 10%;
-    background: #fff;
 }
 
 .hero-content {
     width: 60%;
-    background: var(--color-btn);
+}
+
+.hero-content h1 {
+    font-weight: bold;
+}
+
+.hero-paragraph {
+    margin-top: 1rem;
+    margin-bottom: 2rem;
+}
+
+.hero-btn {
+    text-transform: uppercase;
+    color: black;
+    background: #fff;
+    padding: 0.5rem 1rem;
+    text-decoration: none;
+}
+
+.icons {
+    color: orange;
+    font-size: 20px;
 }
 
 .hero-slider {
     width: 40%;
-    background: #fff;
 }
 
 .hero-container img {
     width: 3rem;
 }
 
-@media screen and (max-width: 800px) {
+@media(max-width: 800px) {
+    .hero {
+        padding: 10rem 0;
+    }
+
     .hero-container {
         flex-direction: column;
     }
+
+    .hero {
+        padding: 2rem;
+    }
+
+    .hero-content {
+        width: 100%;
+    }
+
+    .hero-slider {
+        display: none;
+    }
+
+    .hero-container {
+        width: 100%;
+        padding: 0;
+    }
+}
+
+.callout {
+    background: white;
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+    padding: 4rem;
+}
+
+.callout-container {
+    width: 80%;
+    margin-top: -10rem;
+    background-color: orange;
+    padding: 2rem;
+}
+
+@media(max-width: 800px) {
+    .callout {
+        padding: 2rem;
+    }
+
+    .callout-container {
+        width: 80%;
+        margin-top: -9rem;
+        background-color: orange;
+        padding: 2rem;
+    }
+
+
 }
