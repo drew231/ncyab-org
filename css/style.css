@@ -91,7 +91,7 @@ body {
 }
 
 .navbar {
-    background-color: var(--color-primary);
+    background-color: #fff;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -102,4 +102,44 @@ body {
 
 .nav-item {
     font-size: 1rem;
+}
+
+/* Hero Session */
+.hero {
+    padding: 2rem 4rem 0 ;
+    background: rgb(213, 243, 255);
+    /* background: purple; */
+}
+
+.hero-container {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    /* background: gray; */
+    gap: 1rem;
+}
+
+.sm-icons {
+    width: 10%;
+    background: #fff;
+}
+
+.hero-content {
+    width: 60%;
+    background: var(--color-btn);
+}
+
+.hero-slider {
+    width: 40%;
+    background: #fff;
+}
+
+.hero-container img {
+    width: 3rem;
+}
+
+@media screen and (max-width: 800px) {
+    .hero-container {
+        flex-direction: column;
+    }
 }
