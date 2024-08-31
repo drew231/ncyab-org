@@ -31,6 +31,25 @@ body {
     border: 0 !important;
 }
 
+.navbar-brand img {
+    width: 6rem;
+}
+
+.nav-item:hover {
+    transform: translateY(-5px);
+    transition: .2s all ease-in-out;
+    
+    background-color: rgb(255, 234, 196);
+
+}
+
+/* .dropdown {
+} */
+
+.dropdown span {
+    margin-bottom: -5px;
+}
+
 .navbar-toggler:focus,
 .navbar-toggler:active,
 .navbar-toggler-icon:focus {
